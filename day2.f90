@@ -9,7 +9,7 @@ program daytwo
   character(1), allocatable :: opponent(:), you(:)
   integer(8) :: score
 
-  open(unit=FID, file='day2ex.inp', status='old')
+  open(unit=FID, file='inputs/day2.inp', status='old')
   do while (IERR==0)
     read(FID,'(A8)',iostat=IERR,end=100) CTMP
     num_rounds=num_rounds+1
